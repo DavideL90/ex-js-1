@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#427f34, #90d181);
+}
+.col-left, .col-right{
+  float: left;
+  padding: 20px;
+  text-align: center;
+}
+#lancio1, #lancio2{
+  font-size: 30px;
+  color: white;
+}
+#vincitore{
+  text-align: center;
+}
