@@ -26,16 +26,16 @@ for (var i = 1; i < arrayLancio.length; i++) {
 document.write(winner);
 
 var cont = 0;
-
-for (var i = 0; i < arrayLancio.length; i++) {
-  debugger
-  if (console.log(maxValue == arrayLancio[i])) {
+var arrayPareggio = [];
+for (var k = 0; k < arrayLancio.length; k++) {
+  if (maxValue == arrayLancio[k]) {
+    arrayPareggio.push("Giocatore" + (k + 1));
     cont = cont + 1;
-    console.log(cont);
   }
 }
+console.log(cont);
 // console.log(cont);
-// //
-// // if(cont > 1){
-// //
-// // }
+
+if(cont > 1){
+  document.writeln(arrayPareggio);
+}
