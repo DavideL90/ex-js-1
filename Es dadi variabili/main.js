@@ -1,10 +1,15 @@
 var numeroGiocatori = prompt("Inserire il numero di giocatori:");
-var arrayLancio = [];
+var arrayLancio = new Array();
 var maxValue = 0;
 var winner = "";
 
 for (var i = 1; i < numeroGiocatori; i++) {
   arrayLancio.push([Math.floor((Math.random() * 6) +1 )])
+}
+console.log(arrayLancio);
+
+for (var i = 0; i < arrayLancio.length; i++) {
+  document.writeln("Giocatore" + (i+1) + ":" + arrayLancio[i] + "<br>");
 }
 
 maxValue = arrayLancio[0];
@@ -18,10 +23,7 @@ for (var i = 1; i < arrayLancio.length; i++) {
     winner = "Giocatore" + (i + 1);
   }
 }
-
-console.log(arrayLancio);
-console.log(maxValue);
-console.log(winner);
+document.write(winner);
 
 var cont = 0;
 
@@ -32,8 +34,8 @@ for (var i = 0; i < arrayLancio.length; i++) {
     console.log(cont);
   }
 }
-console.log(cont);
-//
-// if(cont > 1){
-//
-// }
+// console.log(cont);
+// //
+// // if(cont > 1){
+// //
+// // }
