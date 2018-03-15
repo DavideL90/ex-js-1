@@ -8,3 +8,7 @@ for (var i = 0; i < wordInput.length; i++) {
 if(wordInput === reverseWord){
   document.write("La parola è palindroma");
 }
+else{
+  document.write("La parola non è palindroma");
+
+}
